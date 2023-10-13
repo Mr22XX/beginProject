@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Project</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background : linear-gradient(135deg, rgb(73, 192, 162), rgb(44, 71, 158));
+        height: 160vh;
+        max-width: 500px;
+        margin: 0 auto;
+        position: relative;
+        color: rgb(0, 0, 0);
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+       padding: 8px;
+       font-weight: bolder;
+    }
+
+    nav span:hover{
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+
+    .dark{
+        background : linear-gradient(135deg, rgb(24, 23, 23), rgb(66, 69, 70));
+        height: 160vh;
+        max-width: 500px;
+        margin: 0 auto;
+        position: relative;
+        color: white;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+    
+    .row img{
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    
+    .row a{
+        margin-top: 10px;
+        padding: 5px;
+        text-decoration: none;
+        color: white;
+        background: black;
+        border-radius: 10px;
+        width: 80px;
+        text-align: center;
+    }
+
+    .row a:hover{
+        color: black;
+        background: white;
+        border-radius: 10px;
+    }
+    .row1 a:hover{
+        color: black;
+        background: white;
+        border-radius: 10px;
+    }
+    .row2 a:hover{
+        color: black;
+        background: white;
+        border-radius: 10px;
+    }
+    .row3 a:hover{
+        color: black;
+        background: white;
+        border-radius: 10px;
+    }
+    .row1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    
+    .row1 img{
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    
+    .row1 a{
+        margin-top: 10px;
+        padding: 5px;
+        text-decoration: none;
+        color: white;
+        background: black;
+        border-radius: 10px;
+        width: 80px;
+        text-align: center;
+    }
+    .row2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    
+    .row2 img{
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    
+    .row2 a{
+        margin-top: 10px;
+        padding: 5px;
+        text-decoration: none;
+        color: white;
+        background: black;
+        border-radius: 10px;
+        width: 80px;
+        text-align: center;
+        
+    }
+    .row3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    
+    .row3 img{
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    
+    .row3 a{
+        margin-top: 10px;
+        padding: 5px;
+        text-decoration: none;
+        color: white;
+        background: black;
+        border-radius: 10px;
+        width: 80px;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <nav>
+        <span>My Project</span>
+        <span onclick="darkMode()">Mode</span>
+    </nav>
+    <div class="content">
+        <div class="row">
+            <img src="./assets/quran.png" alt="" width="250px">
+            <a href="https://myquran.mr22xx.repl.co/" target="_blank">MyQuran</a>
+        </div>
+        <div class="row1">
+            <img src="./assets/porto.png" alt="" width="250px">
+            <a href="https://mr22xx.github.io/MyPortofolio/" target="_blank">Profile</a>
+        </div>
+        <div class="row2">
+            <img src="./assets/pass.png" alt="" width="250px">
+            <a href="https://passwordgenerator.mr22xx.repl.co/" target="_blank">Password</a>
+        </div>
+        <div class="row3">
+            <img src="./assets/phone.png" alt="" width="250px">
+            <a href="https://rayhan-phone.mr22xx.repl.co/index.html" target="_blank">RPhone</a>
+        </div>
+    </div>
+<script>
+    let body = document.body
+    
+    const darkMode = () =>{
+        body.classList.toggle("dark")
+    }
+
+</script>
+</body>
+</html>
